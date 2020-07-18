@@ -120,11 +120,24 @@ strong
                     </tr>
                   		<tr>
                         <td>
-                          <form method="post" action="{{ route('sale') }}">
+                          <form id="sale-form" method="get" action="{{ route('sale') }}">
                             {!!csrf_field()!!}
                             <input type="hidden" name="idOrder" value="{{ $idOrder }}">
-                          <button type="" class="btn btn-primary"><i class="fa fa-print"></i> Procesar</button>
+
                           </form>
+
+                        <a href="{{ route('order.index') }}"  target="_blank" 
+
+                                    onclick="
+                                    window.open(this.href, this.target); 
+                                    event.preventDefault();
+                                    document.getElementById('sale-form').submit();
+                                    return false;" 
+
+                        class="btn btn-primary" title="Procesar"><span class="fa fa-print">
+                        Procesar
+                        </span></a>
+
 
                            <form  method="post" action="{{ route('cancel') }}">
                             {!!csrf_field()!!}

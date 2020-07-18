@@ -24,7 +24,7 @@ Route::get('products.id/{id}', 'ProductController@edit');
 Route::post('products.id.update', 'ProductController@update');
 Route::get('products.countcode', 'ProductController@countcode');
 
-Route::post('sale.order', 'SaleorderController@store')->name('sale');
+Route::get('sale.order', 'SaleorderController@store')->name('sale');
 Route::post('cancel.order', 'SaleorderController@cancel')->name('cancel');
 #-------------------/
 Route::get('/database', function(){

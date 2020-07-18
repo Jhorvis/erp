@@ -19,7 +19,7 @@ class ClientController extends Controller
 
     public function store (Request $request) {
 
-        $dni = $request->dni;
+        dd($dni = $request->dni);
 
         $clients = Client::all();
 

@@ -38,7 +38,7 @@
                          <label class="control-label col-md-2 col-sm-2 col-xs-12" for="name">RUT <span class="required">*</span>
                         </label>
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                          <input id="code" class="form-control col-md-7 col-xs-12" name="code" placeholder="Ingresar código del producto" required="required" type="text" readonly>
+                          <input id="code" class="form-control col-md-7 col-xs-12" name="code" placeholder="Ingresar RUT" required="required" type="text">
                         </div>
                       </div>
 
@@ -46,7 +46,7 @@
                         <label class="control-label col-md-2 col-sm-2 col-xs-12" for="name">Comuna <span class="required">*</span>
                         </label>
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                          <input class="form-control col-md-7 col-xs-12" name="price" placeholder="Ingresa el precio neto del producto" required="required" type="number">
+                          <input class="form-control col-md-7 col-xs-12" name="price" placeholder="Ingresa comuna" required="required" type="text">
                         </div>
 
                          <label class="control-label col-md-2 col-sm-2 col-xs-12" for="name">Calle<span class="required">*</span>

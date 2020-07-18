@@ -10,6 +10,10 @@ use App\Order;
 
 use App\Saleorder;
 
+use App\Client;
+
+//Use OrderController;
+
 class SaleorderController extends Controller
 {
     public function store (Request $request)
@@ -57,8 +61,9 @@ class SaleorderController extends Controller
     	$updateOrder = Order::find($idOrder);
         $updateOrder->state = 2;
         $updateOrder->update();
-        
-         return view('welcome');
+
+        $clients = Client::all();
+        return view('order/create', compact('clients'));
 
     } 
 }
