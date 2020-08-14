@@ -10,6 +10,10 @@ Route::get('/', function () {
     return view('auth/login');
 })->name('home');
 
+Route::get('/inicio', function () {
+    return view('auth/login');
+})->name('home');
+
 #/-----Rutas principales
 
 Route::resource('products', 'ProductController');
